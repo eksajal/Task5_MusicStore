@@ -3,7 +3,9 @@
 A single-page application (SPA) that generates a deterministic music library using seeded random algorithms.
 
 ## 🚀 Quick Start
-1. Clone the repository: `git clone [https://github.com/eksajal/Task5_MusicStore.git](https://github.com/eksajal/Task5_MusicStore.git)`
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/eksajal/Task5_MusicStore.git](https://github.com/eksajal/Task5_MusicStore.git)
 2. Install dependencies: `npm install`
 3. Start the server: `npm start`
 4. View the app: `http://localhost:3000`
