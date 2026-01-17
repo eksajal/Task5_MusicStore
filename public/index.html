@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-sm sticky top-0 z-50 p-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-6">
+            <div class="flex items-center gap-2">
+                <label class="text-sm font-bold">Region:</label>
+                <select id="locale" class="border rounded px-2 py-1">
+                    <option value="en">English (USA)</option>
+                    <option value="de">German (Germany)</option>
+                    <option value="uk">Ukrainian (Ukraine)</option>
+                </select>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <label class="text-sm font-bold">Seed:</label>
+                <input type="text" id="seed" class="border rounded px-2 py-1 w-32" value="123456">
+                <button id="shuffleSeed" class="bg-indigo-600 text-white px-3 py-1 rounded hover:bg-indigo-700">🎲</button>
+            </div>
+
+            <div class="flex items-center gap-2 flex-grow max-w-xs">
+                <label class="text-sm font-bold">Likes:</label>
+                <input type="range" id="likes" min="0" max="10" step="0.1" value="3.7" class="flex-grow">
+                <span id="likesVal" class="text-sm w-8">3.7</span>
+            </div>
+
+            <div class="flex bg-gray-200 rounded p-1">
+                <button id="viewTable" class="px-4 py-1 rounded bg-white shadow-sm">Table</button>
+                <button id="viewGallery" class="px-4 py-1 rounded">Gallery</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+        <div id="displayArea"></div>
+        <div id="sentinel" class="h-10"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
