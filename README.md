@@ -1,6 +1,6 @@
 # Procedural Music Store Showcase
 
-A single-page application (SPA) that generates a deterministic music library using seeded random algorithms.
+A single-page application (SPA) that generates a deterministic music library using seeded random algorithms. This project ensures 100% reproducibility across different sessions without needing a persistent database.
 
 ## 🚀 Quick Start
 1. **Clone the repository**:
